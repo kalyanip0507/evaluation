@@ -191,7 +191,7 @@ int evaluatePostfix(char* postfix)
             }
         }
     }
-    return pop(&stack);  // Final result
+    return pop(&stack);
 }
 
 void main() 
@@ -219,7 +219,7 @@ void main()
             case 2:
                 printf("Enter Infix Expression: ");
                 fgets(exp, MAX, stdin);
-                exp[strlen(exp) - 1] = '\0';  // Remove the newline character
+                exp[strlen(exp) - 1] = '\0'; 
                 infixToPrefix(exp);
                 break;
             
