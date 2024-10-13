@@ -78,10 +78,10 @@ void infixToPostfix(char* infix)
 			{
                 postfix[j++] = pop(&stack);
             }
-            pop(&stack);  // Remove '('
+            pop(&stack); 
         } 
 		else
-		{  // Operator
+		{ 
             while (stack.top != -1 && precedence(ch) <= precedence(stack.arr[stack.top]))
 			{
                 postfix[j++] = pop(&stack);
